@@ -3,17 +3,18 @@
     STYLE.CSS
 \*------------------------------------*/
 /**
- *
- * sass --watch style.scss:style.min.css --style compressed
- *
  * Here we pull in some variables, include the inuit.css framework, then add our
  * project-specific components afterwards.
+ *
+ * In the LESS version of inuit.css, you have to import here the defaults of the core
+ * framework before your variables as there is no such thing as !default in LESS
  */
 
 
 /**
  * Setup
  */
+@import "inuit.css/defaults";
 @import "vars";
 @import "inuit.css/inuit";
 
